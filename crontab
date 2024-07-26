@@ -1,0 +1,2 @@
+* * * * * echo "Hello, world!" >/proc/1/fd/1 2>&1
+*/2 * * * * /app/shell_script/quarto_render.sh >/proc/1/fd/1 2>&1
