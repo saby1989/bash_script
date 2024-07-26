@@ -1,0 +1,8 @@
+pyaml==24.7.0
+PyYAML==6.0.1
+nbformat
+ipykernel==6.29.5
+nbclient
+numpy
+matplotlib
+

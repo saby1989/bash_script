@@ -1,0 +1,35 @@
+---
+title: "My First Quarto Document with Python"
+author: "Your Name"
+date: "2024-07-11"
+format: html
+jupyter: python3
+execute: 
+  enabled: true
+params:
+  input1: 20
+  input2: "Default Text"
+---
+
+# Introduction
+
+This is a simple Quarto document to demonstrate how to render it to HTML and include Python code with parameters.
+
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
